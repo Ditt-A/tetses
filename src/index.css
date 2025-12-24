@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Font Setup (Biar gak kaku) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #121212; /* Warna latar belakang luar */
+  font-family: 'Inter', sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Animasi Putar Vinyl */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.animate-spin-slow {
+  animation: spin 8s linear infinite;
+}
+
+/* Utility text shadow */
+.text-shadow {
+  text-shadow: 0 4px 12px rgba(0,0,0,0.6);
+}
